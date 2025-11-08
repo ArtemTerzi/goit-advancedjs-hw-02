@@ -1,0 +1,92 @@
+.wrapper {
+  margin-top: 40px;
+  padding: 8px 16px;
+}
+
+.controller {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.controller-input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 272px;
+  padding: 8px 16px;
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+
+  transition: all 250ms ease-in-out;
+}
+
+.controller-input:hover {
+  border-color: black;
+}
+
+.controller-input:disabled {
+  color: #808080;
+  border-color: #808080;
+  background: #fafafa;
+}
+
+.controller-input:focus,
+.controller-input:active {
+  border-color: #4e75ff;
+}
+
+.controller-button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #4e75ff;
+  outline: none;
+
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+
+  background: #4e75ff;
+
+  transition: all 250ms ease-in-out;
+}
+
+.controller-button:hover,
+.controller-button:focus {
+  background: #6c8cff;
+}
+
+.controller-button:disabled {
+  background: #cfcfcf;
+  border-color: #cfcfcf;
+  color: #989898;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  color: #2e2f42;
+}
+
+.value {
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+}
+
+.label {
+  font-size: 16px;
+  line-height: 1.5;
+}
