@@ -7,7 +7,7 @@ const timer = {
   userSelectedDate: Date.now(),
   intervalId: null,
   refs: {
-    buttonEl: document.querySelector('.controller-button'),
+    buttonEl: document.querySelector('button[data-start]'),
     inputEl: document.querySelector('input#datetime-picker'),
     days: document.querySelector('[data-days]'),
     hours: document.querySelector('[data-hours]'),
@@ -16,10 +16,10 @@ const timer = {
   },
 
   start() {
-    timer.intervalId = setInterval(() => {
-      timer.refs.inputEl.disabled = true;
-      timer.refs.buttonEl.disabled = true;
+    timer.refs.inputEl.disabled = true;
+    timer.refs.buttonEl.disabled = true;
 
+    timer.intervalId = setInterval(() => {
       const timeDelta = timer.userSelectedDate - Date.now();
 
       if (timeDelta <= 0) {
@@ -61,6 +61,8 @@ const timer = {
     return String(value).padStart(2, '0');
   },
 };
+
+timer.refs.buttonEl.disabled = true;
 
 const options = {
   enableTime: true,

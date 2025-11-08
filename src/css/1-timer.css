@@ -10,7 +10,7 @@
   margin-bottom: 32px;
 }
 
-.controller-input {
+#datetime-picker {
   border: 1px solid #808080;
   border-radius: 4px;
   width: 272px;
@@ -24,22 +24,22 @@
   transition: all 250ms ease-in-out;
 }
 
-.controller-input:hover {
+#datetime-picker:hover {
   border-color: black;
 }
 
-.controller-input:disabled {
+#datetime-picker:disabled {
   color: #808080;
   border-color: #808080;
   background: #fafafa;
 }
 
-.controller-input:focus,
-.controller-input:active {
+#datetime-picker:focus,
+#datetime-picker:active {
   border-color: #4e75ff;
 }
 
-.controller-button {
+button[data-start] {
   padding: 8px 16px;
   border-radius: 8px;
   border: 1px solid #4e75ff;
@@ -56,12 +56,12 @@
   transition: all 250ms ease-in-out;
 }
 
-.controller-button:hover,
-.controller-button:focus {
+button[data-start]:hover,
+button[data-start]:focus {
   background: #6c8cff;
 }
 
-.controller-button:disabled {
+button[data-start]:disabled {
   background: #cfcfcf;
   border-color: #cfcfcf;
   color: #989898;

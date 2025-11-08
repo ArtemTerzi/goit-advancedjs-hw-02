@@ -25,7 +25,7 @@ const hadnleSubmit = e => {
   const formData = new FormData(refs.form);
   const options = {
     state: formData.get('state'),
-    delay: formData.get('delay'),
+    delay: +formData.get('delay'),
   };
 
   generatePromise(options)
